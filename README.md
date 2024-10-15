@@ -1,3 +1,3 @@
-[Demo](https://github.com/naveenkumar-developer/popupAlert.git) <br>
+[Demo](https://naveenkumar-developer.github.io/popupAlert/) <br>
 
 #click the button to show popup.
