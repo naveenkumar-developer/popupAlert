@@ -1,0 +1,97 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* CONTAINER STYLE TO CENTER THE CHILD  */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, blue, purple);
+}
+
+.popupBtn {
+  font-weight: 500;
+  border: none;
+  outline: none;
+  color: #03045e;
+  width: 300px;
+  padding: 10px 20px;
+  background-color: #023e8a;
+  border-radius: 20px;
+  transition: color 0.4s;
+}
+.popupBtn:hover {
+  color: whitesmoke;
+}
+
+/* POPUP MESSAGE STYLES  */
+.popup {
+  z-index: 1;
+  width: 400px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.2);
+  transition: top 0.4s, transform 0.4s;
+  visibility: hidden;
+  background: linear-gradient(135deg, blue, purple);
+}
+.showPopup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.closePopup{
+  visibility: hidden;
+  top: 0;
+  transform: translate(-50%, -50%) scale(0.2);
+}
+.popup .tickIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  display: grid;
+  place-content: center;
+  color: blue;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: #dad7cd;
+}
+
+.popup h1 {
+  font-size: 1.5rem;
+}
+
+.popup p {
+  line-height: 1.5;
+  word-spacing: 5px;
+  margin-bottom: 20px;
+}
+.popup button {
+  color: #03045e;
+  background-color: #023e8a;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+
+  justify-content: start;
+
+  transition: color 0.4s;
+}
+.popup button:hover {
+  color: whitesmoke;
+}
